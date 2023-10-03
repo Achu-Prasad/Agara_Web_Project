@@ -1,0 +1,106 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+	line-height: 1;
+    background-color: bisque;
+    font-family: 'Roboto', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*Header Section*/
+.main_header{
+    background-color: white;
+    color: #5d5d5d;
+    height: 12vh;
+    width:100vw;
+    position: relative;
+
+}
+.main_logo{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 10em;
+    top: 0.3em;
+}
+.header_top{
+    background-color: whitesmoke;
+    height: 4vh;
+    width: 100vw;
+}
+.header_bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 70%;
+    position: absolute;
+    left: 15rem;
+    
+}
+nav a{
+    color: #5d5d5d;
+    font-size: 1rem;
+    /*transition: border-bottom 0.3s ease-in-out;*/
+    position: relative;
+}
+nav a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 1px;
+    display: block;
+    background-color: #ff5722;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    transition: width 0.3s ease-out;
+}
+nav a:hover::after {
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    gap:1.3rem;
+    font-weight: 600;
+}
+.list_black{
+    color: #333333;
+}
+li>a:hover{
+    color: #ff5722;
+}
+.nav_button{
+    margin: 0;
+    background-color: #ff5722;
+    border: transparent;
+    height: 6vh;
+    width: 6vw;
+    border-radius: 7px;
+    margin-left: 1.3rem;
+}
