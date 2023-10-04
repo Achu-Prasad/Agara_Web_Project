@@ -30,6 +30,7 @@ ol, ul {
 }
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 /*navigation bar Section*/
@@ -48,19 +49,61 @@ a{
     height: auto;
     left: 7em;
     top: 0.3em;
+    z-index: 100;
 }
 /* top header */
 .header_top{
-    background-color: whitesmoke;
-    height: 4vh;
+    height: 5vh;
     width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.alumni_corner{
+    display: inline-flex;
+    width: 144px;
+    height: 100%;
+    background-image: linear-gradient(to left,#ff5722 0,#f39900 100%);
+    color: white;
+    font-weight: 500;
+    margin-left: 320px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.alumni_corner i{
+    margin-left: 5px;
+    font-size: larger;
+}
+.nav_top_contact{
+    background-color: #ff5722;
+    display: flex;
+    padding: 5px 0px 5px 20px;
+    color: white;
+    border-radius:30px 0 0 30px;
+
+}
+.ul_Social{
+    font-size: larger;
+    font-weight: 600;
+    color:white;
+    display: flex;
+    margin-left: 1rem;
+}
+.ul_Social li{
+    height: 100%;
+    margin-left: 1rem;
+}
+strong{
+    font-weight: 700;
+}
+
 /* bottom header */
 .header_bottom{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 8vh;
+    height: 7vh;
     min-width: 70%;
     position: absolute;
     left: 15rem;
@@ -112,4 +155,95 @@ li>a:hover{
     width: 83px;
     border-radius: 7px;
     margin-left: 1.3rem;
+}
+.nav_button_1000{
+    display: none;
+}
+@media screen and (max-width:1164px) {
+    .nav_top_contact{
+        background-color: #ff5722;
+        display: flex;
+        padding: 5px 25px 5px 20px;
+        color: white;
+        border-radius:30px 0 0 30px;
+        align-items: center;
+    
+    }
+    .ul_Social{
+        font-size: larger;
+        font-weight: 600;
+        color:white;
+        display: flex;
+    }
+    .ul_Social li{
+        height: 100%;
+        margin-left:10px;
+    }
+    .header_bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 7vh;
+        min-width: 70%;
+        position: absolute;
+        left: 15rem;
+        overflow: hidden;
+        
+    }
+    nav li{
+        /* border: 2px solid black; */
+        /* min-width: 100px; */
+    flex: 1 0 auto;
+    }
+    nav a{
+        color: #5d5d5d;
+        font-size: 0.8rem;
+        position: relative;
+    }
+    
+}
+@media screen and (max-width:1003px) {
+    .nav_top_contact{
+        background-color: #ff5722;
+        display: none;
+        padding: 5px 25px 5px 20px;
+        color: white;
+        border-radius:30px 0 0 30px;
+        align-items: center;
+    }
+    .header_bottom{
+        display: none;
+        
+    }
+    nav li{
+    flex: 1 0 auto;
+    }
+    nav a{
+        color: #5d5d5d;
+        font-size: 0.8rem;
+        position: relative;
+    }
+    .nav_button_1000{
+        display: inline-block;
+        background-color: #ff5722;
+        border: transparent;
+        height: 50px;
+        width: 110px;
+        border-radius: 7px;
+        position: absolute;
+        left: 84vw;
+        top: 3vh;
+    }
+    .alumni_corner{
+        display: none;
+    }
+    .main_logo{
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 44vw;
+        top:1vh;
+        z-index: 100;
+    }
+
 }
