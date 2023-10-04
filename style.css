@@ -32,48 +32,57 @@ a{
     text-decoration: none;
 }
 
-/*Header Section*/
+/*navigation bar Section*/
 .main_header{
     background-color: white;
     color: #5d5d5d;
     height: 12vh;
-    width:100vw;
+    min-width:100vw;
     position: relative;
+    overflow: hidden;
 
 }
 .main_logo{
     position: absolute;
     width: auto;
     height: auto;
-    left: 10em;
+    left: 7em;
     top: 0.3em;
 }
+/* top header */
 .header_top{
     background-color: whitesmoke;
     height: 4vh;
     width: 100vw;
 }
+/* bottom header */
 .header_bottom{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 8vh;
-    width: 70%;
+    min-width: 70%;
     position: absolute;
     left: 15rem;
+    overflow: hidden;
     
+}
+nav li{
+    /* border: 2px solid black; */
+    /* min-width: 100px; */
+flex: 1 0 auto;
 }
 nav a{
     color: #5d5d5d;
     font-size: 1rem;
-    /*transition: border-bottom 0.3s ease-in-out;*/
     position: relative;
 }
+
+/* navigation bar animation hover  */
 nav a::after {
     content: "";
     width: 0;
     height: 2px;
-    border-radius: 1px;
     display: block;
     background-color: #ff5722;
     position: absolute;
@@ -99,8 +108,8 @@ li>a:hover{
     margin: 0;
     background-color: #ff5722;
     border: transparent;
-    height: 6vh;
-    width: 6vw;
+    height: 40px;
+    width: 83px;
     border-radius: 7px;
     margin-left: 1.3rem;
 }
