@@ -24,6 +24,7 @@ body {
 	line-height: 1;
     background-color: bisque;
     font-family: 'Roboto', sans-serif;
+    height: 7000px;
 }
 ol, ul {
 	list-style: none;
@@ -39,8 +40,9 @@ a{
     color: #5d5d5d;
     height: 85px;
     min-width:100vw;
-    position: relative;
+    position: fixed;
     overflow: hidden;
+    z-index: 9999;
 
 }
 .main_logo{
@@ -166,8 +168,60 @@ li>a:hover{
 .nav_button_1000{
     display: none;
 }
-
-
+/* MAIN SECTION */
+#carouselExample{
+    
+}
+.fixed_icons{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    position: fixed;
+    right: -200px;
+    top: 160px;
+    z-index: 10;
+}
+.fixed{
+    height: 50px;
+    width: 250px;
+    background-color: #f34108;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+}
+.fixed p{
+    letter-spacing: 2px;
+}
+.fixed i{
+    font-weight: 600;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.fixed1{
+    margin-left: 200px;
+    transition: all 0.3s ease;
+}
+.fixed1:hover{
+    margin-left:0px;
+}
+.fixed2{
+    position:relative;
+    margin-left: 200px;
+    transition: all 0.3s ease;
+}
+.fixed2:hover{
+    margin-left:0px;
+}
+.fixed3{
+    position:relative;
+    margin-left: 200px;
+    transition: all 0.3s ease;
+}
+.fixed3:hover{
+    margin-left:0px;
+}
 /* media queries starts here */
 
 
