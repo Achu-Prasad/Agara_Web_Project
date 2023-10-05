@@ -37,7 +37,7 @@ a{
 .main_header{
     background-color: white;
     color: #5d5d5d;
-    height: 12vh;
+    height: 85px;
     min-width:100vw;
     position: relative;
     overflow: hidden;
@@ -53,7 +53,7 @@ a{
 }
 /* top header */
 .header_top{
-    height: 5vh;
+    height: 30px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -83,19 +83,26 @@ a{
     border-radius:30px 0 0 30px;
 
 }
+.nav_top_contact p{
+    flex: 1 0 auto;
+}
 .ul_Social{
     font-size: larger;
     font-weight: 600;
     color:white;
     display: flex;
-    margin-left: 1rem;
+    margin-left: 10px;
+    margin-right: 20px;
 }
 .ul_Social li{
     height: 100%;
-    margin-left: 1rem;
+    margin-left:10px;
 }
 strong{
     font-weight: 700;
+}
+.menu_icon{
+    display:none;
 }
 
 /* bottom header */
@@ -103,7 +110,7 @@ strong{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 7vh;
+    height: 50px;
     min-width: 70%;
     position: absolute;
     left: 15rem;
@@ -159,6 +166,11 @@ li>a:hover{
 .nav_button_1000{
     display: none;
 }
+
+
+/* media queries starts here */
+
+
 @media screen and (max-width:1164px) {
     .nav_top_contact{
         background-color: #ff5722;
@@ -183,7 +195,7 @@ li>a:hover{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 7vh;
+        height: 50px;
         min-width: 70%;
         position: absolute;
         left: 15rem;
@@ -202,6 +214,10 @@ li>a:hover{
     }
     
 }
+
+
+/* below 1003 pixels screens */
+
 @media screen and (max-width:1003px) {
     .nav_top_contact{
         background-color: #ff5722;
@@ -227,12 +243,16 @@ li>a:hover{
         display: inline-block;
         background-color: #ff5722;
         border: transparent;
-        height: 50px;
-        width: 110px;
+        height: 35px;
+        width: 80px;
         border-radius: 7px;
         position: absolute;
-        left: 84vw;
-        top: 3vh;
+        left: 83vw;
+        top:28px;
+        margin-right: 20px;
+    }
+    .nav_button_1000 a{
+        font-weight: 600;
     }
     .alumni_corner{
         display: none;
@@ -245,5 +265,107 @@ li>a:hover{
         top:1vh;
         z-index: 100;
     }
+    .menu_icon{
+        color:#ff5722;
+        font-weight: 600;
+        display: inline-flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        right: 85vw;
+    }
+    .menu_icon i{
+        font-size:27px;
+        margin-right: 10px;
+    }
+
+}
+
+/* below 519 pixels screens*/
+
+
+@media screen and (max-width:519px) {
+    .nav_button_1000{
+        display: inline-block;
+        background-color: #ff5722;
+        border: transparent;
+        height: 30px;
+        width: 70px;
+        border-radius: 7px;
+        position: relative;
+        left: 78vw;
+        top: 1px;
+    }
+    .nav_button_1000 a{
+        font-weight: 600;
+    }
+    .main_logo{
+        position: absolute;
+        width: 90px;
+        height: 70px;
+        left: 40vw;
+        top:1vh;
+        z-index: 100;
+    }
+    .menu_icon{
+        color:#ff5722;
+        font-weight: 600;
+        display: inline-flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        right: 75vw;
+    }
+    .menu_icon i{
+        font-size:27px;
+        margin-right: 10px;
+    }
+}
+
+
+/* below 320 pixels screens*/
+
+@media screen and (max-width:320px) {
+    .main_logo{
+        position: absolute;
+        width: 90px;
+        height: 70px;
+        left: 37vw;
+        top:1vh;
+        z-index: 100;
+    }
+    .nav_button_1000{
+        display: inline-block;
+        background-color: #ff5722;
+        border: transparent;
+        height: 2rem;
+        width: 4.5rem;
+        border-radius: 7px;
+        position: relative;
+        left: 75vw;
+        
+    }
+    .nav_button_1000 a{
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .menu_icon{
+        color:#ff5722;
+        font-weight: 600;
+        display: inline-flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        right: 80vw;
+    }
+    .menu_icon i{
+        font-size:27px;
+        margin-right: 10px;
+
+    }
+    .menu_icon p{
+        display: none;
+    }
+
 
 }
