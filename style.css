@@ -25,6 +25,7 @@ body {
     background-color:white;
     font-family: 'Roboto', sans-serif;
     height: 7000px;
+    scroll-behavior: smooth;
 }
 ol, ul {
 	list-style: none;
@@ -233,36 +234,49 @@ nav ul{
 .welcom_container{
     display: flex;
     height: 70vh;
-    border: 2px solid black;
     padding:2rem 0 2rem 0;
     overflow: hidden;
+    justify-content: center;
 }
 .welcome_inside{
     display: flex;
-    flex-direction: column;
-    padding:  0rem 0rem 0rem 4rem;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.wel_content{
+    max-width: 40vw;
+    padding-top:2rem;
+    margin-right: 2rem;
 }
 .heading_welcome{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-bottom: 1rem;
     color: #333333;
+    font-weight: 600;
+    text-align: none;
 }
 .heading_welcome span{
     color: #f39900;
 }
 .wel_img{
-    height:100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.wel_img img{
+    height:95%;
     width: 100%;
-    float: right;
 }
 .wel_p{
     line-height: 2;
     object-fit: contain;
-    flex: 0 1 auto;
-    height: auto;
+    flex: 1 1 auto;
     text-align: justify;
-    
+    margin-top: 3rem;
+    font-weight:lighter;
+    font-size:0.9rem;
+    padding-right: 20px;
 }
 /* media queries starts here */
 
@@ -306,7 +320,57 @@ nav ul{
         font-size: 0.8rem;
         position: relative;
     }
-    
+    .welcom_container{
+        display: flex;
+        height: auto;
+        overflow: hidden;
+        justify-content: center;
+        padding:2rem;
+    }
+    .welcome_inside{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex:1 1 auto;
+    }
+    .wel_content{
+        max-width:1000px;
+        padding:20px;
+        margin-right: 0;
+        margin-top: 0px;
+    }
+    .heading_welcome{
+        font-size: 2rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-bottom: 1rem;
+        color: #333333;
+        font-weight: 600;
+        text-align: none;
+    }
+    .heading_welcome span{
+        color: #f39900;
+    }
+    .wel_img{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .wel_img img{
+        height:250px;
+        width:350px;
+    }
+    .wel_p{
+        line-height: 2;
+        object-fit: contain;
+        flex: 1 1 auto;
+        text-align: justify;
+        margin-top: 1rem;
+        font-weight:lighter;
+        font-size:0.9rem;
+        padding-right: 20px;
+        
+    }
+
 }
 
 
@@ -372,6 +436,56 @@ nav ul{
         font-size:27px;
         margin-right: 10px;
     }
+    .welcom_container{
+        display: flex;
+        height: auto;
+        overflow: hidden;
+        justify-content: center;
+        padding:2rem 0 2rem 0;
+    }
+    .welcome_inside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex:1 1 auto;
+    }
+    .wel_content{
+        max-width:1000px;
+        padding:20px;
+        margin-right: 0;
+        margin-top: 0px;
+    }
+    .heading_welcome{
+        font-size: 2rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-bottom: 1rem;
+        color: #333333;
+        font-weight: 600;
+        text-align: center;
+    }
+    .heading_welcome span{
+        color: #f39900;
+    }
+    .wel_img{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .wel_img img{
+        height:300px;
+        width:400px;
+    }
+    .wel_p{
+        line-height: 2;
+        object-fit: contain;
+        flex: 1 1 auto;
+        text-align: justify;
+        margin-top: 1rem;
+        font-weight:lighter;
+        font-size:0.9rem;
+        padding-right: 0px;
+        
+    }
 
 }
 
@@ -413,6 +527,55 @@ nav ul{
     .menu_icon i{
         font-size:27px;
         margin-right: 10px;
+    }
+    .welcom_container{
+        display: flex;
+        height: auto;
+        overflow: hidden;
+        justify-content: center;
+        padding:2rem 0 2rem 0;
+    }
+    .welcome_inside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex:1 1 auto;
+    }
+    .wel_content{
+        max-width:512px;
+        padding:20px;
+        margin-right: 0;
+        margin-top: 0px;
+    }
+    .heading_welcome{
+        font-size: 1.5rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-bottom: 1rem;
+        color: #333333;
+        font-weight: 600;
+        text-align: left;
+    }
+    .heading_welcome span{
+        color: #f39900;
+    }
+    .wel_img{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .wel_img img{
+        height:95%;
+        width: 100%;
+    }
+    .wel_p{
+        line-height: 2;
+        object-fit: contain;
+        flex: 1 1 auto;
+        text-align: justify;
+        margin-top: 1rem;
+        font-weight:lighter;
+        font-size:0.9rem;
+        padding-right: 0px;
     }
 }
 
@@ -460,6 +623,54 @@ nav ul{
     .menu_icon p{
         display: none;
     }
-
-
+    .welcom_container{
+        display: flex;
+        height: auto;
+        overflow: hidden;
+        justify-content: center;
+        padding:2rem 0 2rem 0;
+    }
+    .welcome_inside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex:1 1 auto;
+    }
+    .wel_content{
+        max-width:512px;
+        padding:20px;
+        margin-right: 0;
+        margin-top: 0px;
+    }
+    .heading_welcome{
+        font-size: 1.5rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-bottom: 1rem;
+        color: #333333;
+        font-weight: 600;
+        text-align: left;
+    }
+    .heading_welcome span{
+        color: #f39900;
+    }
+    .wel_img{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .wel_img img{
+        height:95%;
+        width: 100%;
+    }
+    .wel_p{
+        line-height: 2;
+        object-fit: contain;
+        flex: 1 1 auto;
+        text-align: justify;
+        margin-top: 1rem;
+        font-weight:lighter;
+        font-size:0.9rem;
+        padding-right: 0px;
+        
+    }
 }
