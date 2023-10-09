@@ -234,7 +234,7 @@ nav ul{
 .welcom_container{
     display: flex;
     height: 70vh;
-    padding:2rem 0 2rem 0;
+    padding:4rem 0 4rem 0;
     overflow: hidden;
     justify-content: center;
 }
@@ -273,10 +273,97 @@ nav ul{
     object-fit: contain;
     flex: 1 1 auto;
     text-align: justify;
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-weight:lighter;
     font-size:0.9rem;
     padding-right: 20px;
+    color: #5d5d5d;
+}
+/* Vision Section */
+.vision{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #111;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    flex: 1 1 auto;
+}
+.vision_heading{
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 600;
+    text-align: none;
+}
+.vision p{
+    color: white;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.5;
+    display: block;
+}
+/* Founders Section */
+
+#founder_msg{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    padding: 4rem 0;
+    justify-content: center;
+    align-items: center;
+}
+.founders_msg{
+    display: flex;
+    width: 80%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+}
+.Founder_img{
+    width: 50%;
+    height: 50%;
+    margin-right: 1.5rem;
+}
+.founder_cont{
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 1 auto;
+    width: 40%;
+    height: 100%;
+    justify-content: space-between;
+}
+.founder_cont p{
+    text-align: justify;
+    padding: 1rem;
+    color: #5d5d5d;
+    line-height: 2;
+    object-fit: contain;
+    flex: 1 1 auto;
+    font-weight:lighter;
+    font-size:0.9rem;
+}
+.founder_head1{
+    font-size: 2.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 2rem;
+    color: #333333;
+    font-weight: 600;
+    text-align: none;
+    padding-left: 1rem;
+}
+.founder_head1 span{
+    color: #f39900;
+}
+.founder_head2{
+    color: #333333;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
 }
 /* media queries starts here */
 
@@ -365,11 +452,75 @@ nav ul{
         flex: 1 1 auto;
         text-align: justify;
         margin-top: 1rem;
+        /* margin-bottom: 1rem; */
         font-weight:lighter;
         font-size:0.9rem;
         padding-right: 20px;
+        color: #5d5d5d;
         
     }
+         /* Founders Section */
+
+        #founder_msg{
+            display: flex;
+            width: 100%;
+            height: 70%;
+            padding: 2rem 0;
+            justify-content: center;
+            align-items: center;
+        }
+        .founders_msg{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            height: 70%;
+            justify-content: center;
+            align-items: center;
+        }
+        .Founder_img{
+            width: 100%;
+            height: 100%;
+            margin-right: 0;
+            margin-bottom: 0rem;
+            
+        }
+        .founder_cont{
+            display: flex;
+            flex-flow: column wrap;
+            flex: 1 1 auto;
+            width: 100%;
+            height: 80%;
+            justify-content: space-between;
+            
+        }
+        .founder_cont p{
+            text-align: justify;
+            padding: 1rem;
+            color: #5d5d5d;
+            line-height: 2;
+            object-fit: contain;
+            flex: 1 1 auto;
+            font-weight:lighter;
+            font-size:0.9rem;
+        }
+        .founder_head1{
+            font-size: 2.5rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-bottom: 2rem;
+            color: #333333;
+            font-weight: 600;
+            text-align: none;
+            padding-left: 1rem;
+        }
+        .founder_head1 span{
+            color: #f39900;
+        }
+        .founder_head2{
+            color: #333333;
+            font-weight: 600;
+            margin-bottom: 0rem;
+            padding-left: 1rem;
+        }
 
 }
 
@@ -484,8 +635,70 @@ nav ul{
         font-weight:lighter;
         font-size:0.9rem;
         padding-right: 0px;
+        color: #5d5d5d;
         
     }
+         /* Founders Section */
+
+        #founder_msg{
+            display: flex;
+            width: 100%;
+            height: 70%;
+            padding: 2rem 0;
+            justify-content: center;
+            align-items: center;
+        }
+        .founders_msg{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 70%;
+            justify-content: center;
+            align-items: center;
+        }
+        .Founder_img{
+            width: 50%;
+            height: 50%;
+            margin-right: 0;
+            margin-bottom: 2rem;
+        }
+        .founder_cont{
+            display: flex;
+            flex-flow: column wrap;
+            flex: 1 1 auto;
+            width: 90%;
+            height: 100%;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .founder_cont p{
+            text-align: justify;
+            padding: 1rem;
+            color: #5d5d5d;
+            line-height: 2;
+            object-fit: contain;
+            flex: 1 1 auto;
+            font-weight:lighter;
+            font-size:0.9rem;
+        }
+        .founder_head1{
+            font-size: 2.5rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-bottom: 2rem;
+            color: #333333;
+            font-weight: 600;
+            text-align: cente;
+            padding-left: 1rem;
+        }
+        .founder_head1 span{
+            color: #f39900;
+        }
+        .founder_head2{
+            color: #333333;
+            font-weight: 600;
+            margin-bottom: 0rem;
+            padding-left: 1rem;
+        }
 
 }
 
@@ -576,6 +789,67 @@ nav ul{
         font-weight:lighter;
         font-size:0.9rem;
         padding-right: 0px;
+        color: #5d5d5d;
+    }
+     /* Founders Section */
+
+    #founder_msg{
+        display: flex;
+        width: 100%;
+        height: 70%;
+        padding: 2rem 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .founders_msg{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 70%;
+        justify-content: center;
+        align-items: center;
+    }
+    .Founder_img{
+        width: 100%;
+        height: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .founder_cont{
+        display: flex;
+        flex-flow: column wrap;
+        flex: 1 1 auto;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+    }
+    .founder_cont p{
+        text-align: justify;
+        padding: 1rem;
+        color: #5d5d5d;
+        line-height: 2;
+        object-fit: contain;
+        flex: 1 1 auto;
+        font-weight:lighter;
+        font-size:0.9rem;
+    }
+    .founder_head1{
+        font-size: 1.5rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-bottom: 2rem;
+        color: #333333;
+        font-weight: 600;
+        text-align: none;
+        padding-left: 1rem;
+    }
+    .founder_head1 span{
+        color: #f39900;
+    }
+    .founder_head2{
+        color: #333333;
+        font-weight: 600;
+        margin-bottom: 0rem;
+        padding-left: 1rem;
     }
 }
 
@@ -671,6 +945,7 @@ nav ul{
         font-weight:lighter;
         font-size:0.9rem;
         padding-right: 0px;
+        color: #5d5d5d;
         
     }
 }
