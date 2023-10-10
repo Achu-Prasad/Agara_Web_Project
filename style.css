@@ -365,6 +365,47 @@ nav ul{
     margin-bottom: 1.5rem;
     padding-left: 1rem;
 }
+/* #tag Section  */
+.hash_container{
+    background-image: url(./assets/asset\ 3.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+}
+.hash_sec{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.hash{
+    font-weight: 600;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    flex: 1 1 auto;
+    text-align: center;
+    line-height: 1.5;
+    position: absolute;
+}
+.orange{
+    color: #ff5722;
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.white{
+    color: white;
+}
+
 /* media queries starts here */
 
 
@@ -521,7 +562,6 @@ nav ul{
             margin-bottom: 0rem;
             padding-left: 1rem;
         }
-
 }
 
 
